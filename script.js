@@ -9,9 +9,21 @@ $(document).ready(function(){
     });
   }
 
-
+  function getRandomPokemonRight() {
+    let randomNumber = Math.floor(Math.random() * 800) + 1;
+    $.get(`https://pokeapi.co/api/v2/pokemon/${randomNumber}`).then(function(pokeData){
+      console.log("Right Pokemon Data: ", pokeData);
+    });
+  }
 
 //all code here
+
+   $("#leftButton").click(getRandomPokemonLeft){
+     let pokemonLeft =
+     
+   }
+
+   $("#rightButton").click(getRandomPokemonRight);
 
 
 
